@@ -1,0 +1,97 @@
+body{
+	color: #FFFFFF;
+}
+h2,p{
+	color: #FFFFFF;
+	font-family: 'MetricRegular';
+}
+.mdl-card-login{
+    width: 100%;
+    max-width: 580px;
+    margin: auto;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+.mdl-card-login .mdl-card__title{
+    display: block;
+}
+.mdl-card-login .mdl-card__title p{
+	margin: 0;
+	font-size: 24px;
+}
+.mdl-card-login .mdl-card__title h2{
+	margin: 5px 0;
+	font-family: 'MetricSemiBold';
+	font-size: 50px;
+}
+.mdl-card-login .mdl-card__actions button {
+    width: 100%;
+    background-color: #4fc0a6;
+    color: #fff;
+    font-family: 'RobotoBold';
+    text-transform: initial;
+    height: 42px;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 16px;
+    max-width: 200px;
+    border-radius: 10px;
+}
+.mdl-card-login .mdl-card__actions .button-user {
+    width: 49%;
+    display: inline-block;
+}
+.mdl-card-login .mdl-card__actions .button-user button {
+    border: 1px solid #4fc0a6;
+    background-color: transparent;
+    color: #000;
+}
+.mdl-card-login .mdl-card__actions .button-user button:hover {
+    background-color: #4fc0a6;
+    color: #fff;
+}
+.mdl-card-login .mdl-card__actions .button-register {
+    max-width: 180px;
+    margin-top: 38px;
+}
+.mdl-card-login .mdl-card__actions .button-register i {
+    vertical-align: middle;
+    color: #fff;
+    margin-right: 20px;
+}
+.mdl-card-login .mdl-card__actions p {
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.mdl-card-login a {
+    color: #000;
+    text-decoration: underline;
+    text-decoration-color: #4fc0a6;
+    font-family: 'RobotoMedium'
+}
+.fondo-imagen{
+	background: url('../img/fondo/fondo_hpe.jpg') center center no-repeat;
+	width: 100%;
+	height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover !important;
+    z-index: 0;
+}
+.fondo-imagen:BEFORE{
+	content: '';
+	background-color: #000000;
+	opacity: .3;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+	height: 100%;
+}

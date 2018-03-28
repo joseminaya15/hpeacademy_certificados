@@ -1,8 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-	public function index()
-	{
+class Login extends CI_Controller {
+
+	public function index(){
 		$this->load->view('v_login');
 	}
 }
