@@ -53,14 +53,14 @@
                                 <img src="<?php echo RUTA_IMG?>logo/pdf.png">
                                 <p>BASHO: Prospecte de Modo Infalible</p>
                             </div>
-                            <a><i></i>Previsualizar</a>
+                            <a href="#" data-toggle="modal" data-target="#ModalCertificado"><i></i>Previsualizar</a>
                         </div>
                         <div class="certificados">
                             <div class="contenido">
                                 <img src="<?php echo RUTA_IMG?>logo/pdf.png">
                                 <p>IDC - Transformacion Digital nas PMEs: Oportunidades y desafios</p>
                             </div>
-                            <a><i></i>Previsualizar</a>
+                            <a href="#" data-toggle="modal" data-target="#ModalCertificado"><i></i>Previsualizar</a>
                         </div>
                     </div>
                 </div>
@@ -69,6 +69,21 @@
                 </div>
             </div>
         </section>
+        <!--MODAL-->
+        <div class="modal fade" id="ModalCertificado" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-lg text-center">
+                <div class="modal-content">
+                    <div class="mdl-card" >
+                        <div class="mdl-card__title p-0">
+                            <img alt="" src="">
+                        </div>
+                        <div class="mdl-card__menu">                            
+                            <button class="mdl-button mdl-js-button mdl-button--icon"><i class="mdi mdi-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>bootstrap/bootstrap.min.js?v=<?php echo time();?>"></script>
