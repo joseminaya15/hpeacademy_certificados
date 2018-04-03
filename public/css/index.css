@@ -115,11 +115,18 @@ label {
 #certificado h2{
     color: #000000;
 }
+#certificado .datos p{
+    color: #767676;
+    font-size: 22px;
+    font-family: 'MetricLight';
+    margin: 0;
+    line-height: 26px;
+}
 footer {
     background-color: #d1d3d5;
 }
 footer img {
-    max-width: 180px;
+    max-width: 125px;
     margin-bottom: 20px;
 }
 footer p {

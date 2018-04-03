@@ -37,10 +37,10 @@
             </div>
         </section>
         <section id="certificado">
-            <div class="container">
+            <div class="container m-t-50 m-b-50">
                 <div class="col-md-9">
-                    <div class="">
-                        <p>Bienvenido(a)</p>
+                    <div class="datos">
+                        <p>Bienvenido(a):</p>
                         <h2><?php echo $nombre.' '.$apellidos ?></h2>
                         <p>Pa&iacute;s: <?php echo $pais ?></p>
                         <p>E-mail: <?php echo $correo ?></p>
@@ -69,6 +69,23 @@
                 </div>
             </div>
         </section>
+        <footer class="section col-xs-12">
+            <div class="container">
+                <div class="col-xs-12 p-0">
+                    <img src="<?php echo RUTA_IMG?>logo/logo_footer.svg">
+                </div>
+                <div class="col-xs-6 p-0 left">
+                    <p>&copy;Copyright 2018 Hewlett Packard Enterprise Development, L.P.</p>
+                </div>
+                <div class="col-xs-6 p-0 right">
+                    <ul>
+                        <li>Terms of use</li>
+                        <li>Privacy</li>
+                        <li>Report Bug</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
         <!--MODAL-->
         <div class="modal fade" id="ModalCertificado" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog modal-lg text-center">
