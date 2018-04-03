@@ -14,12 +14,12 @@ class Certificados extends CI_Controller {
     }
 
 	public function index(){
-        $data['nombre'] = $this->session->userdata('Nombres');
+        $data['nombre']    = $this->session->userdata('Nombres');
         $data['apellidos'] = $this->session->userdata('Apellidos');
-        $data['pais'] = $this->session->userdata('Pais') == null ? '-' : $this->session->userdata('Pais');
-        $data['correo'] = $this->session->userdata('correo');
-        $data['empresa'] = $this->session->userdata('empresa') == null ? '-' : $this->session->userdata('empresa');
-        $username        = $this->M_correo->getDatosCorreos($this->session->userdata('correo'));
+        $data['pais']      = $this->session->userdata('Pais') == null ? '-' : $this->session->userdata('Pais');
+        $data['correo']    = $this->session->userdata('correo') == null ? '-' : $this->session->userdata('correo');
+        $data['empresa']   = $this->session->userdata('empresa') == null ? '-' : $this->session->userdata('empresa');
+        $username          = $this->M_correo->getDatosCorreos($this->session->userdata('correo'));
         $html = '';
         $pdf  = '';
         foreach ($username as $key) {
