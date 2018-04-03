@@ -119,8 +119,24 @@ label {
     color: #767676;
     font-size: 22px;
     font-family: 'MetricLight';
-    margin: 0;
+    margin: 5px 0;
     line-height: 26px;
+}
+#certificado h2{
+    font-size: 28px;
+    line-height: 32px;
+    font-family: 'MetricSemiBold';
+    margin: 15px 0;
+}
+#certificado .datos{
+    padding: 30px 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+#certificado .datos-certificados{
+    padding: 10px 0;
+}
+.certificados .contenido p{
+    margin: 0;
 }
 footer {
     background-color: #d1d3d5;
@@ -130,8 +146,18 @@ footer img {
     margin-bottom: 20px;
 }
 footer p {
-    font-family: 'RobotoMedium'}
+    font-family: 'MetricRegular';
+    font-size: 13px;
+    color: #000000;
+    margin: 0;
+}
 footer ul li {
     display: inline-block;
     padding: 0 10px;
-    font-family: 'RobotoMedium'}
+    font-family: 'MetricRegular';
+    font-size: 13px;
+    color: #000000;
+}
+footer .right{
+    text-align: right;
+}

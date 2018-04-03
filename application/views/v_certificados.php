@@ -46,7 +46,7 @@
                         <p>E-mail: <?php echo $correo ?></p>
                         <p>Empresa: <?php echo $empresa ?></p>
                     </div>
-                    <div>
+                    <div class="datos-certificados">
                         <h2>Certificados obtenidos</h2>
                         <?php echo $html ?>
                     </div>
