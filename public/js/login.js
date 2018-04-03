@@ -16,7 +16,7 @@ function ingresar() {
 		try{
         	data = JSON.parse(data);
         	if(data.error == 0){
-        		location.href = 'inicio';
+        		location.href = 'Certificados';
         		$('#exampleInputEmail1').val("");
         	}else {
 				$('#exampleInputEmail1').parent().addClass('is-invalid');
