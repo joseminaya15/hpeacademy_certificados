@@ -102,4 +102,5 @@ h2,p{
 }
 .fondo-certificado:BEFORE{
     height: 500px;
+    position: relative;
 }

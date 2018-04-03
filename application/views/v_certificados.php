@@ -46,6 +46,23 @@
                         <p>E-mail: <?php echo $correo ?></p>
                         <p>Empresa: <?php echo $empresa ?></p>
                     </div>
+                    <div>
+                        <h2>Certificados obtenidos</h2>
+                        <div class="certificados">
+                            <div class="contenido">
+                                <img src="<?php echo RUTA_IMG?>logo/pdf.png">
+                                <p>BASHO: Prospecte de Modo Infalible</p>
+                            </div>
+                            <a><i></i>Previsualizar</a>
+                        </div>
+                        <div class="certificados">
+                            <div class="contenido">
+                                <img src="<?php echo RUTA_IMG?>logo/pdf.png">
+                                <p>IDC - Transformacion Digital nas PMEs: Oportunidades y desafios</p>
+                            </div>
+                            <a><i></i>Previsualizar</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-3">
                     
