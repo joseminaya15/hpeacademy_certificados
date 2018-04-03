@@ -138,6 +138,27 @@ label {
 .certificados .contenido p{
     margin: 0;
 }
+.redes .twitter{
+    background-color: #1EA1F3;
+}
+.redes .facebook{
+    background-color: #3B5999;
+}
+.redes .linkedin{
+    background-color: #0077B5;
+}
+.redes .google{
+    background-color: #DD4B3E;
+}
+.redes a{
+    margin: 0 5px;
+    display: inline-block;
+}
+.redes a i{
+    vertical-align: middle;
+    color: #FFFFFF;
+    font-size: 18px;
+}
 footer {
     background-color: #d1d3d5;
 }
