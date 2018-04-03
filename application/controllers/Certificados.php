@@ -30,6 +30,12 @@ class Certificados extends CI_Controller {
                             <p>'.$key->nom_certf.'</p>
                         </div>
                         <a onclick="openPDF(&quot;'.$pdf.'&quot;)"><i></i>Previsualizar</a>
+                    </div>
+                    <div class="redes">
+                        <a class="mdl-button mdl-js-button mdl-button--icon twitter" href = "https://twitter.com/intent/tweet?status='.RUTA_IMG.'2.jpg" data-size = "large"><i class="fa fa-twitter"></i></a>
+                        <a class="mdl-button mdl-js-button mdl-button--icon linkedin" href = "https://www.linkedin.com/shareArticle?mini=true&url=http://www.sap-latam.com/sap_business_one/Prueba&title=Publicación&source=SAP" data-size="large"><i class="fa fa-linkedin"></i></a>
+                        <a class="mdl-button mdl-js-button mdl-button--icon facebook" href = "http://facebook.com/sharer.php?u=http://www.sap-latam.com/sap_business_one/Prueba" data-size="large"><i class="fa fa-facebook"></i></a>
+                        <a class="mdl-button mdl-js-button mdl-button--icon google" href = "https://plus.google.com/share?url=http://www.sap-latam.com/sap_business_one/Prueba" data-size="large"><i class="fa fa-google-plus"></i></a>
                     </div>';
         }
         $data['html'] = $html;

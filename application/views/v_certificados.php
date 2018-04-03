@@ -50,12 +50,6 @@
                         <h2>Certificados obtenidos</h2>
                         <?php echo $html ?>
                     </div>
-                    <div class="redes">
-                        <a class="mdl-button mdl-js-button mdl-button--icon twitter" href = "https://twitter.com/intent/tweet?status=<?php echo RUTA_IMG.'2.jpg' ?>" data-size = "large"><i class="fa fa-twitter"></i></a>
-                        <a class="mdl-button mdl-js-button mdl-button--icon linkedin" href = "https://www.linkedin.com/shareArticle?mini=true&url=http://www.sap-latam.com/sap_business_one/Prueba&title=Publicación&source=SAP" data-size="large"><i class="fa fa-linkedin"></i></a>
-                        <a class="mdl-button mdl-js-button mdl-button--icon facebook" href = "http://facebook.com/sharer.php?u=http://www.sap-latam.com/sap_business_one/Prueba" data-size="large"><i class="fa fa-facebook"></i></a>
-                        <a class="mdl-button mdl-js-button mdl-button--icon google" href = "https://plus.google.com/share?url=http://www.sap-latam.com/sap_business_one/Prueba" data-size="large"><i class="fa fa-google-plus"></i></a>
-                    </div>
                 </div>
                 <div class="col-md-3">
                     
