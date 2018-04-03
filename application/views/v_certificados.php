@@ -25,7 +25,7 @@
     </head>
     <body>
         <section class>
-            <div class="fondo-imagen"></div>
+            <div class="fondo-imagen fondo-certificado"></div>
             <div class="header">
                 <div class="mdl-container row">
                     <div class="col-xs-12">
@@ -35,21 +35,20 @@
                     </div>
                 </div>
             </div>
-            <div class="center-login">
-                <div class="mdl-card mdl-card-login">
-                    <div class="mdl-card__title">
-                        <p>Bienvenido al Portal de Certificados</p>
-                        <h2 class="title">HPE Marketing Academy</h2>
-                        <p class="subtitle">Gracias por su participación. Recuerde que nuestros certificados son reconocidos globalmente y le darán una gran ventaja competitiva.</p>
+        </section>
+        <section id="certificado">
+            <div class="container">
+                <div class="col-md-9">
+                    <div class="">
+                        <p>Bienvenido(a)</p>
+                        <h2>Jhonatan Mahíca</h2>
+                        <p>Pa&iacute;s: Peru</p>
+                        <p>E-mail: anali.vidal@sap.com</p>
+                        <p>Empresa: sap</p>
                     </div>
-                    <div class="mdl-card__supporting-text">
-                        <h2>Obtener certificado</h2>
-                        <p>Ingrese su e-mail para acceder a su certificado:</p>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                    </div>
-                    <div class="mdl-card__actions p-0">
-                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="ingresar()">Ingresar</button>
-                    </div>
+                </div>
+                <div class="col-md-3">
+                    
                 </div>
             </div>
         </section>

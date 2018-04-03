@@ -3,7 +3,9 @@ body {
     padding: 0;
     overflow: hidden;
     overflow-y: scroll;
-    font-family: 'MetricRegular'}
+    font-family: 'MetricRegular';
+    background-color: #FFFFFF;
+}
 label {
     font-weight: 100;
 }
@@ -106,6 +108,11 @@ label {
 }
 .mdl-card__supporting-text{
     width: 100%;
+}
+/*CERTIFICADOS*/
+#certificado p,
+#certificado h2{
+    color: #000000;
 }
 footer {
     background-color: #d1d3d5;
