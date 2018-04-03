@@ -41,10 +41,10 @@
                 <div class="col-md-9">
                     <div class="">
                         <p>Bienvenido(a)</p>
-                        <h2>Jhonatan Mahíca</h2>
-                        <p>Pa&iacute;s: Peru</p>
-                        <p>E-mail: anali.vidal@sap.com</p>
-                        <p>Empresa: sap</p>
+                        <h2><?php echo $nombre.' '.$apellidos ?></h2>
+                        <p>Pa&iacute;s: <?php echo $pais ?></p>
+                        <p>E-mail: <?php echo $correo ?></p>
+                        <p>Empresa: <?php echo $empresa ?></p>
                     </div>
                 </div>
                 <div class="col-md-3">

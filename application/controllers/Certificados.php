@@ -14,6 +14,11 @@ class Certificados extends CI_Controller {
     }
 
 	public function index(){
-		$this->load->view('v_certificados');
+        $data['nombre'] = $this->session->userdata('Nombres');
+        $data['apellidos'] = $this->session->userdata('Apellidos');
+        $data['pais'] = $this->session->userdata('Pais') == null ? '-' : $this->session->userdata('Pais');
+        $data['correo'] = $this->session->userdata('correo');
+        $data['empresa'] = $this->session->userdata('empresa') == null ? '-' : $this->session->userdata('empresa');
+		$this->load->view('v_certificados', $data);
 	}
 }
