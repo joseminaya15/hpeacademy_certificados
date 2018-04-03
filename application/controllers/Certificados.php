@@ -19,6 +19,20 @@ class Certificados extends CI_Controller {
         $data['pais'] = $this->session->userdata('Pais') == null ? '-' : $this->session->userdata('Pais');
         $data['correo'] = $this->session->userdata('correo');
         $data['empresa'] = $this->session->userdata('empresa') == null ? '-' : $this->session->userdata('empresa');
+        $username        = $this->M_correo->getDatosCorreos($this->session->userdata('correo'));
+        $html = '';
+        $pdf  = '';
+        foreach ($username as $key) {
+            $pdf = RUTA_ARCHIVOS.$key->certificados;
+            $html .= '<div class="certificados">
+                        <div class="contenido">
+                            <img src="'.RUTA_IMG.'logo/pdf.png">
+                            <p>'.$key->nom_certf.'</p>
+                        </div>
+                        <a onclick="openPDF(&quot;'.$pdf.'&quot;)"><i></i>Previsualizar</a>
+                    </div>';
+        }
+        $data['html'] = $html;
 		$this->load->view('v_certificados', $data);
 	}
 }

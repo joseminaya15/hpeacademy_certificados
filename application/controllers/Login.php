@@ -33,8 +33,8 @@ class Login extends CI_Controller {
 				$session = array('correo'    => $correo,
 								 'Nombres'   => $username[0]->Nombres,
 								 'Apellidos' => $username[0]->Apellidos,
-								 'Pais' 	 => null,
-								 'empresa' 	 => null,
+								 'Pais' 	 => $username[0]->Pais,
+								 'empresa' 	 => $username[0]->empresa,
 								 'Id' 		 => $username[0]->Id);
           		$this->session->set_userdata($session);
 				$data['error'] = EXIT_SUCCESS;

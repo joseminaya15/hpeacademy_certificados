@@ -48,20 +48,7 @@
                     </div>
                     <div>
                         <h2>Certificados obtenidos</h2>
-                        <div class="certificados">
-                            <div class="contenido">
-                                <img src="<?php echo RUTA_IMG?>logo/pdf.png">
-                                <p>BASHO: Prospecte de Modo Infalible</p>
-                            </div>
-                            <a href="#" data-toggle="modal" data-target="#ModalCertificado"><i></i>Previsualizar</a>
-                        </div>
-                        <div class="certificados">
-                            <div class="contenido">
-                                <img src="<?php echo RUTA_IMG?>logo/pdf.png">
-                                <p>IDC - Transformacion Digital nas PMEs: Oportunidades y desafios</p>
-                            </div>
-                            <a href="#" data-toggle="modal" data-target="#ModalCertificado"><i></i>Previsualizar</a>
-                        </div>
+                        <?php echo $html ?>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -91,8 +78,8 @@
             <div class="modal-dialog modal-lg text-center">
                 <div class="modal-content">
                     <div class="mdl-card" >
-                        <div class="mdl-card__title p-0">
-                            <img alt="" src="">
+                        <div class="mdl-card__title p-0" id="r">
+                            
                         </div>
                         <div class="mdl-card__menu">                            
                             <button class="mdl-button mdl-js-button mdl-button--icon" data-dismiss="modal"><i class="mdi mdi-close"></i></button>
@@ -109,6 +96,6 @@
         <script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
-        <script src="<?php echo RUTA_JS?>login.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_JS?>certificados.js?v=<?php echo time();?>"></script>
     </body>
 </html>

@@ -91,7 +91,7 @@ defined('RUTA_IMG')     OR define('RUTA_IMG'    , 'http://'.(isset($_SERVER['HTT
 defined('RUTA_VIDEO')   OR define('RUTA_VIDEO'  , 'http://'.(isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : null).'/hpeacademy_certificados/public/video/');
 defined('RUTA_JS')      OR define('RUTA_JS'     , 'http://'.(isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : null).'/hpeacademy_certificados/public/js/');
 defined('RUTA_PLUGINS') OR define('RUTA_PLUGINS', 'http://'.(isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : null).'/hpeacademy_certificados/public/plugins/');
-defined('RUTA_ARCHIVOS') OR define('RUTA_ARCHIVOS'  , 'http://'.(isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : null).'/hpeacademy_certificados/public/archivos/');
+defined('RUTA_ARCHIVOS') OR define('RUTA_ARCHIVOS'  , 'http://'.(isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : null).'/hpeacademy_certificados/public/certificados/');
 
 //NOMBRE DEL PROYECTO
 defined('PROYECTO_NAME') OR define('PROYECTO_NAME','SAP_gana_goleada');
