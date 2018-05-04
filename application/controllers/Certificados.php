@@ -14,6 +14,9 @@ class Certificados extends CI_Controller {
     }
 
 	public function index(){
+        if($this->session->userdata('correo') == null){
+            header("location: Login");
+        }
         $data['nombre']    = $this->session->userdata('Nombres');
         $data['apellidos'] = $this->session->userdata('Apellidos');
         $data['pais']      = $this->session->userdata('Pais') == null ? '-' : $this->session->userdata('Pais');
