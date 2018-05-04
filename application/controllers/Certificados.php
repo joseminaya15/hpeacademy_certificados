@@ -25,14 +25,20 @@ class Certificados extends CI_Controller {
         $username          = $this->M_correo->getDatosCorreos($this->session->userdata('correo'));
         $html = '';
         $pdf  = '';
+        $btn  = '';
         foreach ($username as $key) {
             $pdf = RUTA_ARCHIVOS.$key->certificados;
+            if(isset($key->certificados)){
+                $btn = '<a onclick="openPDF(&quot;'.$pdf.'&quot;)"><i></i>Previsualizar</a>';
+            }else {
+                $btn  = '<a onclick="openPDF(&quot;'.$pdf.'&quot;)" style="pointer-events: none;"><i></i>Previsualizar</a>';
+            }
             $html .= '<div class="certificados">
                         <div class="contenido">
                             <img src="'.RUTA_IMG.'logo/pdf.png">
                             <p>'.$key->nom_certf.'</p>
                         </div>
-                        <a onclick="openPDF(&quot;'.$pdf.'&quot;)"><i></i>Previsualizar</a>
+                        '.$btn.'
                     </div>
                     <div class="redes">
                         <a class="mdl-button mdl-js-button mdl-button--icon twitter" href = "https://twitter.com/intent/tweet?status='.RUTA_IMG.'2.jpg" data-size = "large"><i class="fa fa-twitter"></i></a>
@@ -44,4 +50,15 @@ class Certificados extends CI_Controller {
         $data['html'] = $html;
 		$this->load->view('v_certificados', $data);
 	}
+    function cerrarCesion(){
+        $data['error'] = EXIT_ERROR;
+        $data['msj']   = null;
+        try {
+            $this->session->unset_userdata('correo');
+            $data['error'] = EXIT_SUCCESS;
+        }catch (Exception $e){
+            $data['msj'] = $e->getMessage();
+        }
+        echo json_encode($data);
+    }
 }
