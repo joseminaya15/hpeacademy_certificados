@@ -1,9 +1,9 @@
 function openPDF(pdf){
     window.open(pdf,"_blank");
 }
-function cerrarCesion(){
+function cerrarSesion(){
 	$.ajax({
-		url  : 'certificados/cerrarCesion',
+		url  : 'certificados/cerrarSesion',
 		type : 'POST'
 	}).done(function(data){
 		try{

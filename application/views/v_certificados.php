@@ -33,7 +33,7 @@
                             <img src="<?php echo RUTA_IMG?>logo/logo_header.png">
                         </div>
                         <div class="col-xs-6 text-right p-0">
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarCesion()"> Cerrar Sesi&oacute;n</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-logout" onclick="cerrarSesion()"> Cerrar Sesi&oacute;n</button>
                         </div>
                     </div>
                 </div>

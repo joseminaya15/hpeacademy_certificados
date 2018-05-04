@@ -50,7 +50,7 @@ class Certificados extends CI_Controller {
         $data['html'] = $html;
 		$this->load->view('v_certificados', $data);
 	}
-    function cerrarCesion(){
+    function cerrarSesion(){
         $data['error'] = EXIT_ERROR;
         $data['msj']   = null;
         try {
