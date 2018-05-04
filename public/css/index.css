@@ -159,6 +159,14 @@ label {
     color: #FFFFFF;
     font-size: 18px;
 }
+.button-logout{
+    background-color: #01a982 !important;
+    border-radius: 20px;
+    color: #FFFFFF;
+    text-transform: initial;
+    font-family: MetricSemiBold;
+    margin-top: 12px;
+}
 footer {
     background-color: #d1d3d5;
 }
