@@ -42,12 +42,12 @@ label {
 }
 .header a {
     color: #4fc0a6;
-    font-family: 'RobotoBold';
+    font-family: 'MetricSemiBold';
 }
 .header p {
     font-size: 28px;
     color: #fff;
-    font-family: 'RobotoMedium';
+    font-family: 'MetricSemiBold';
     margin-top: 10px;
     font-size: 20px;
     text-decoration: none;
@@ -55,7 +55,7 @@ label {
 }
 .header .tipo-user {
     font-size: 18px;
-    font-family: 'RobotoRegular';
+    font-family: 'MetricRegular';
     margin: 0;
 }
 .mdl-container {
@@ -74,7 +74,7 @@ label {
     border: 1px solid #000;
 }
 .mdl-input label {
-    font-family: 'RobotoLight';
+    font-family: 'MetricLight';
     color: #000;
     cursor: pointer;
 }
