@@ -38,14 +38,12 @@
             <div class="center-login">
                 <div class="mdl-card mdl-card-login">
                     <div class="mdl-card__title">
-                        <p>Bienvenido al Portal de Certificados</p>
+                        <h2>Obtener certificado</h2>
                         <h2 class="title">HPE Marketing Academy</h2>
                         <p class="subtitle">Gracias por su participación. Recuerde que nuestros certificados son reconocidos globalmente y le darán una gran ventaja competitiva.</p>
                     </div>
                     <div class="mdl-card__supporting-text p-t-0">
-                        <h2>Obtener certificado</h2>
-                        <p>Ingrese su e-mail para acceder a su certificado:</p>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" onkeyup="verificarDatos(event);">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email" onkeyup="verificarDatos(event);">
                     </div>
                     <div class="mdl-card__actions p-0">
                         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="ingresar()">Ingresar</button>

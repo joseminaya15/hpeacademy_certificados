@@ -28,6 +28,9 @@ h2{
 	font-size: 24px;
 }
 .mdl-card-login .mdl-card__title h2{
+    font-family: 'MetricRegular';
+}
+.mdl-card-login .mdl-card__title h2.title{
 	margin: 5px 0;
 	font-family: 'MetricSemiBold';
 	font-size: 50px;
