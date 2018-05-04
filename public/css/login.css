@@ -5,32 +5,39 @@ h2,p{
 	color: #FFFFFF;
 	font-family: 'MetricRegular';
 }
+h2{
+    margin: 10px 0;
+    line-height:  40px;
+}
 .mdl-card-login{
     width: 100%;
-    max-width: 580px;
+    max-width: 520px;
     margin: auto;
     border: none;
     padding: 10px;
     text-align: center;
     background-color: transparent;
+    margin-top: 50px;
 }
 .mdl-card-login .mdl-card__title{
     display: block;
+    padding: 0;
 }
 .mdl-card-login .mdl-card__title p{
-	margin: 0;
+	margin: 10px 0;
 	font-size: 24px;
 }
 .mdl-card-login .mdl-card__title h2{
 	margin: 5px 0;
 	font-family: 'MetricSemiBold';
 	font-size: 50px;
+    line-height: 42px;
 }
 .mdl-card-login .mdl-card__actions button {
     width: 100%;
     background-color: #4fc0a6;
     color: #fff;
-    font-family: 'RobotoBold';
+    font-family: 'MetricSemiBold';
     text-transform: initial;
     height: 42px;
     box-shadow: none;
@@ -70,7 +77,14 @@ h2,p{
     color: #000;
     text-decoration: underline;
     text-decoration-color: #4fc0a6;
-    font-family: 'RobotoMedium'
+    font-family: 'MetricSemiBold'
+}
+.mdl-card-login .mdl-card__supporting-text input{
+    max-width: 400px;
+    margin: auto;
+}
+.mdl-card-login .mdl-card__supporting-text p{
+    font-size: 20px
 }
 .fondo-imagen{
 	background: url('../img/fondo/fondo_hpe.jpg') center center no-repeat;
@@ -91,7 +105,7 @@ h2,p{
 .fondo-imagen:BEFORE{
 	content: '';
 	background-color: #000000;
-	opacity: .3;
+	opacity: .5;
     position: fixed;
     top: 0;
     right: 0;
