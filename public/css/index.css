@@ -138,6 +138,28 @@ label {
 .certificados .contenido p{
     margin: 0;
 }
+.certificados .contenido{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.certificados .contenido img{
+    width: 100%;
+    max-width: 50px;
+}
+.certificados .contenido p{
+    font-size: 20px;
+    margin-left: 10px;
+    line-height: 22px;
+}
+.certificados a{
+    font-size: 20px;
+    color: #01A982;
+    cursor: pointer;
+}
+.redes{
+    margin-top: 20px;
+}
 .redes .twitter{
     background-color: #1EA1F3;
 }
