@@ -40,7 +40,7 @@ function verificarDatos(e) {
 }
 function cerrarCesion(){
 	$.ajax({
-		url  : 'Login/cerrarSesion',
+		url  : 'Descargas/cerrarSesion',
 		type : 'POST'
 	}).done(function(data){
 		try{

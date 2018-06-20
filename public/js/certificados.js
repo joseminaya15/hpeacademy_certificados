@@ -3,7 +3,7 @@ function openPDF(pdf){
 }
 function cerrarSesion(){
 	$.ajax({
-		url  : 'certificados/cerrarSesion',
+		url  : 'Descargas/cerrarSesion',
 		type : 'POST'
 	}).done(function(data){
 		try{
