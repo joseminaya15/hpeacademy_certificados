@@ -16,7 +16,7 @@ function ingresar() {
 		try{
         	data = JSON.parse(data);
         	if(data.error == 0){
-        		location.href = 'Certificados';
+        		location.href = 'Descargas';
         		$('#exampleInputEmail1').val("");
         	}else {
 				$('#exampleInputEmail1').parent().addClass('is-invalid');
@@ -37,4 +37,21 @@ function verificarDatos(e) {
 		e.preventDefault();
 		ingresar();
     }
+}
+function cerrarCesion(){
+	$.ajax({
+		url  : 'Login/cerrarSesion',
+		type : 'POST'
+	}).done(function(data){
+		try{
+        data = JSON.parse(data);
+        if(data.error == 0){
+        	location.href = 'Login';
+        }else {
+        	return;
+        }
+      }catch(err){
+        msj('error',err.message);
+      }
+	});
 }
