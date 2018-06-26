@@ -12,42 +12,59 @@ class Pdf2 extends CI_Controller {
     }
 
 	public function index(){
-		$html2pdf = new Html2Pdf();
-		$html2pdf->writeHTML('<html>
-								<head>
-									<style>
-										.js-fondo{
-											background: url(http://www.marketinghpe.com/microsite/ecb/public/img/fondo/fondo-home.jpg) no-repeat center center;
-										    position: absolute;
-										    top: 0;
-										    left: 0;
-										    right: 0;
-										    bottom: 0;
-											background-size: cover;
-											height: 100vh;
-											z-index: 10;
-										}
-											h1{color: red;}
-										}
-									</style>
-								</head>
-								<body>
-									<div class="js-fondo"></div>
-									<h1>Certificado de participación</h1>
-									<p>Por el presente certificamos que</p>
-									<h2>Henry Rodríguez</h2>
-									<p>ha completado satisfactoriamente el
-									HPE Digital Marketing Academy
-									y cuenta con los conocimientos esenciales para
-									desarrollar campañas de Marketing Digital.</p>
-									<p>_____________________</p>
-									<p>Gabriella Guazzo</p>
-									<p>Channel Marketing Manager, Latin America & Caribbean</p>
-									<p>Miami, Florida</p>
-									<p>Junio "X" de 2018</p>
-									<img src="http://www.marketinghpe.com/microsite/ecb/public/img/fondo/fondo-home.jpg"/>
-								</body>
-							  </html>');
-		$html2pdf->output();
+		$html='<html>
+					<head>
+						<link rel="stylesheet" href="http://hpedigitalmarketingacademy.com/Certificados/public/fonts/metric.css">
+						<style>
+							body,html{
+								margin: 0;
+								padding: 0;
+								font-family: "MetricRegular";
+							}
+							.fondo-imagen{
+								position: absolute;
+								top: 0;
+								left: 0;
+								right: 0;
+								bottom: 0;
+								width: 100%;
+								height: 100%;
+							}
+							.js-logo{
+								padding-top: 150px;
+							}
+							.js-information{
+								text-align: center;
+								padding-top: 100px;
+							}
+							.js-information h2{
+								font-size: 40px;
+							}
+						</style>
+					</head>
+					<body>
+						<div class="fondo-imagen">
+							<img style="width: 100%;" src="http://hpedigitalmarketingacademy.com/Certificados/public/img/fondo/fondo.png"/>
+						</div>
+						<div class="js-logo"><img width="180" src="http://hpedigitalmarketingacademy.com/Certificados/public/img/logo/logo-footer.png"/></div>
+						<div class="js-information">
+							<h2 style="font-family: "MetricRegular";">Certificado de participación</h2>
+							<p>Por el presente certificamos que</p>
+							<h2>Henry Rodríguez</h2>
+							<p>ha completado satisfactoriamente el
+							HPE Digital Marketing Academy
+							y cuenta con los conocimientos esenciales para
+							desarrollar campañas de Marketing Digital.</p>
+							<p>_____________________</p>
+							<p>Gabriella Guazzo</p>
+							<p>Channel Marketing Manager, Latin America & Caribbean</p>
+							<p>Miami, Florida</p>
+							<p>Junio "X" de 2018</p>
+						</div>
+					</body>
+				  </html>';
+		$mpdf  = new \Mpdf\Mpdf();
+		$mpdf ->writeHTML($html);
+		$mpdf ->output();
 	}
 }
