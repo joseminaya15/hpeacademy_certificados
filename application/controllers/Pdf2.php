@@ -6,7 +6,6 @@ use Spipu\Html2Pdf\Html2Pdf;
 
 class Pdf2 extends CI_Controller {
 
-
 	function __construct() {
         parent::__construct();
         $this->load->helper("url");
@@ -34,7 +33,18 @@ class Pdf2 extends CI_Controller {
 								</head>
 								<body>
 									<div class="js-fondo"></div>
-									<h1>Hola mundo</h1>
+									<h1>Certificado de participación</h1>
+									<p>Por el presente certificamos que</p>
+									<h2>Henry Rodríguez</h2>
+									<p>ha completado satisfactoriamente el
+									HPE Digital Marketing Academy
+									y cuenta con los conocimientos esenciales para
+									desarrollar campañas de Marketing Digital.</p>
+									<p>_____________________</p>
+									<p>Gabriella Guazzo</p>
+									<p>Channel Marketing Manager, Latin America & Caribbean</p>
+									<p>Miami, Florida</p>
+									<p>Junio "X" de 2018</p>
 									<img src="http://www.marketinghpe.com/microsite/ecb/public/img/fondo/fondo-home.jpg"/>
 								</body>
 							  </html>');
