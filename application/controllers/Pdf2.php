@@ -74,7 +74,7 @@ class Pdf2 extends CI_Controller {
 							<p>Por el presente certificamos que</p>
 							<h3>'.$nombre.' '.$Apellidos.'</h3>
 							<div width="360" style="margin:auto;">
-								<p>ha completado satisfactoriamente el <strong>HPE Digital Marketing Academy</strong> y cuenta con los conocimientos esenciales para desarrollar campañas de Marketing Digital.</p>
+								<p>ha completado satisfactoriamente el <strong>HPE Digital Marketing Academy</strong><br> y cuenta con los conocimientos esenciales para desarrollar campañas de Marketing Digital.</p>
 							</div><br><br>
 							<img style="border-bottom: 1px solid #757575;" src="http://hpedigitalmarketingacademy.com/Certificados/public/img/fondo/firma.jpg"/><br><br>
 							<span>Gabriella Guazzo</span><br>
