@@ -12,9 +12,11 @@ class Pdf2 extends CI_Controller {
     }
 
 	public function index(){
+		$nombre = $this->session->userdata('Nombres');
+		$Apellidos = $this->session->userdata('Apellidos');
 		$html='<html>
 					<head>
-						<link rel="stylesheet" href="http://hpedigitalmarketingacademy.com/Certificados/public/fonts/metric.css">
+						<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
 						<style>
 							body,html{
 								margin: 0;
@@ -35,10 +37,30 @@ class Pdf2 extends CI_Controller {
 							}
 							.js-information{
 								text-align: center;
-								padding-top: 100px;
+								padding-top: 20px;
 							}
 							.js-information h2{
 								font-size: 40px;
+								font-family: "Roboto",sans-serif;
+								font-weight: 100;
+							}
+							.js-information p{
+								font-size: 20px;
+								font-family: "Roboto",sans-serif;
+								font-weight: light;
+								color: #231F20;
+							}
+							.js-information h3{
+								font-size: 42px;
+								font-family: "Roboto",sans-serif;
+								font-weight: bold;
+							}
+							.js-information span{
+								font-size: 14px;
+								font-family: "Roboto",sans-serif;
+								font-weight: light;
+								display: block;
+								color: #231F20;
 							}
 						</style>
 					</head>
@@ -50,16 +72,15 @@ class Pdf2 extends CI_Controller {
 						<div class="js-information">
 							<h2 style="font-family: "MetricRegular";">Certificado de participación</h2>
 							<p>Por el presente certificamos que</p>
-							<h2>Henry Rodríguez</h2>
-							<p>ha completado satisfactoriamente el
-							HPE Digital Marketing Academy
-							y cuenta con los conocimientos esenciales para
-							desarrollar campañas de Marketing Digital.</p>
-							<p>_____________________</p>
-							<p>Gabriella Guazzo</p>
-							<p>Channel Marketing Manager, Latin America & Caribbean</p>
-							<p>Miami, Florida</p>
-							<p>Junio "X" de 2018</p>
+							<h3>'.$nombre.' '.$Apellidos.'</h3>
+							<div width="360" style="margin:auto;">
+								<p>ha completado satisfactoriamente el <strong>HPE Digital Marketing Academy</strong> y cuenta con los conocimientos esenciales para desarrollar campañas de Marketing Digital.</p>
+							</div><br><br>
+							<img style="border-bottom: 1px solid #757575;" src="http://hpedigitalmarketingacademy.com/Certificados/public/img/fondo/firma.jpg"/><br><br>
+							<span>Gabriella Guazzo</span><br>
+							<span>Channel Marketing Manager, Latin America & Caribbean</span><br><br>
+							<span>Miami, Florida</span><br>
+							<span>Junio, 2018</span><br>
 						</div>
 					</body>
 				  </html>';
