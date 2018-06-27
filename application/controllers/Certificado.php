@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 require getcwd().'\vendor\autoload.php';
 use Spipu\Html2Pdf\Html2Pdf;
 
-class Pdf2 extends CI_Controller {
+class Certificado extends CI_Controller {
 
 	function __construct() {
         parent::__construct();
@@ -16,6 +16,7 @@ class Pdf2 extends CI_Controller {
 		$Apellidos = $this->session->userdata('Apellidos');
 		$html='<html>
 					<head>
+						<link rel="shortcut icon" href="http://hpedigitalmarketingacademy.com/Certificados/public/img/logo/favicon.ico">
 						<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
 						<style>
 							body,html{
@@ -70,16 +71,16 @@ class Pdf2 extends CI_Controller {
 						</div>
 						<div class="js-logo"><img width="180" src="http://hpedigitalmarketingacademy.com/Certificados/public/img/logo/logo-footer.png"/></div>
 						<div class="js-information">
-							<h2 style="font-family: "MetricRegular";">Certificado de participación</h2>
+							<h2 style="font-family: "MetricRegular";">Certificado de Participación</h2>
 							<p>Por el presente certificamos que</p>
 							<h3>'.$nombre.' '.$Apellidos.'</h3>
 							<div width="360" style="margin:auto;">
-								<p>ha completado satisfactoriamente el <strong>HPE Digital Marketing Academy</strong><br> y cuenta con los conocimientos esenciales para desarrollar campañas de Marketing Digital.</p>
+								<p>ha completado satisfactoriamente el<br> <strong>HPE Digital Marketing Academy</strong> compuesto por 10 workshops dictados bajo la modalidad de webinar y ahora cuenta con los conocimientos esenciales para desarrollar campañas de Marketing Digital.</p>
 							</div><br><br>
-							<img style="border-bottom: 1px solid #757575;" src="http://hpedigitalmarketingacademy.com/Certificados/public/img/fondo/firma.jpg"/><br><br>
+							<img width="250" style="border-bottom: 1px solid #757575;" src="http://hpedigitalmarketingacademy.com/Certificados/public/img/fondo/firma.jpg"/><br><br>
 							<span>Gabriella Guazzo</span><br>
-							<span>Channel Marketing Manager, Latin America & Caribbean</span><br><br>
-							<span>Miami, Florida</span><br>
+							<span>EG Geography Marketing Manager Latin America</span><br>
+							<span>Hewlett Packard Enterprise</span><br><br>
 							<span>Junio, 2018</span><br>
 						</div>
 					</body>

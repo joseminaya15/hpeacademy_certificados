@@ -27,20 +27,19 @@ class Descargas extends CI_Controller {
         $pdf  = '';
         $btn  = '';
         foreach ($username as $key) {
-            $pdf = RUTA_ARCHIVOS.$key->certificados;
-            if(isset($key->certificados)){
-                $btn = '<a onclick="openPDF(&quot;'.$pdf.'&quot;)"><i></i>Previsualizar</a>';
-            }else {
-                $btn  = '<a onclick="openPDF(&quot;'.$pdf.'&quot;)" style="pointer-events: none;"><i></i>Previsualizar</a>';
-            }
+            // $pdf = RUTA_ARCHIVOS.$key->certificados;
+            // if(isset($key->certificados)){
+            //     $btn = '<a onclick="openPDF(&quot;'.$pdf.'&quot;)"><i></i>Previsualizar</a>';
+            // }else {
+            //     $btn  = '<a onclick="openPDF(&quot;'.$pdf.'&quot;)" style="pointer-events: none;"><i></i>Previsualizar</a>';
+            // }
             $html .= '<div class="certificados">
                         <div class="contenido">
                             <img src="'.RUTA_IMG.'logo/pdf.png">
-                            <p>'.$key->nom_certf.'</p>
+                            <p><a href="Certificado" target="_blank">Previsualizar</a></p>
                         </div>
-                        '.$btn.'
                     </div>
-                    <div class="redes">
+                    <div class="redes" style="display: none;">
                         <a class="mdl-button mdl-js-button mdl-button--icon twitter" href = "https://twitter.com/intent/tweet?status='.RUTA_ARCHIVOS.'$key->certificados" data-size = "large"><i class="fa fa-twitter"></i></a>
                         <a class="mdl-button mdl-js-button mdl-button--icon linkedin" href = "https://www.linkedin.com/shareArticle?mini=true&url=http://www.sap-latam.com/sap_business_one/Prueba&title=Publicación&source=SAP" data-size="large"><i class="fa fa-linkedin"></i></a>
                         <a class="mdl-button mdl-js-button mdl-button--icon facebook" href = "http://facebook.com/sharer.php?u=http://www.sap-latam.com/sap_business_one/Prueba" data-size="large"><i class="fa fa-facebook"></i></a>

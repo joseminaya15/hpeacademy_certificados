@@ -1,6 +1,3 @@
-function openPDF(pdf){
-    window.open(pdf,"_blank");
-}
 function cerrarSesion(){
 	$.ajax({
 		url  : 'Descargas/cerrarSesion',
